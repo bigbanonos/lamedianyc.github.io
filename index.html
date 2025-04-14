@@ -8,20 +8,43 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
     @media screen and (max-width: 768px) {
-      .overlay-text {
-      box-sizing: border-box;
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-        padding: 1rem;
-        font-size: 0.9rem;
-      }
-      .overlay-text h3 {
-        font-size: 1.1rem;
-      }
-    }
+   .overlay-article {
+    margin-bottom: 3rem;
+  }
+  .overlay-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  .overlay-text h3 {
+    margin-top: 0;
+  }
+  .overlay-text p {
+    margin-bottom: 0.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
     .overlay-text {
-      word-wrap: break-word;
+      font-size: 0.9rem;
+      padding: 1rem 1.5rem;
     }
+    .overlay-text h3 {
+      font-size: 1.1rem;
+    }
+  }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
